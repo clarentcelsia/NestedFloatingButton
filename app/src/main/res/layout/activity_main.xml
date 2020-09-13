@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="Hello World!" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        app:fab_expandDirection="up"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        app:fab_labelStyle="@style/labelfab"
+        app:fab_addButtonColorPressed="@color/colorAccent"
+        app:fab_addButtonPlusIconColor="@android:color/white"
+        app:fab_labelsPosition="left"
+        app:fab_addButtonSize="normal">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/ic_baseline_edit_24"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="#AFADAD"
+            app:fab_title="Edit"
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/ic_baseline_search_24"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="#AFADAD"
+            app:fab_title="Search"
+            />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
